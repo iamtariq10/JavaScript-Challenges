@@ -195,14 +195,13 @@
 // }
 // else{
 //         alert(`${number3} is greater than ${number2} $ ${number1}`);
-//
 
 // }
 // }
 
 // maximumThreeNum();
 
-//Programe 21
+// Programe 21
 // 21. Write a js program to check whether a number is negative,        positive or zero.
 // function numberCheck(){
 // let number = prompt("Enter number:");
@@ -220,7 +219,7 @@
 // }
 // numberCheck();
 
-//Programe 22
+// Programe 22
 // 22. Write a js program to check whether a number is divisible by 5 and 11 or not.
 
 // function isDivisbleFive(){
@@ -475,8 +474,8 @@
 // }
 // vowelOrNot();
 
-// Program 27
-// 27. Write a js program to input any character and check whether it is alphabet, digit or special
+// // Program 27
+// // 27. Write a js program to input any character and check whether it is alphabet, digit or special
 
 // function checkValue() {
 //   let string = prompt("Enter your input");
@@ -492,7 +491,6 @@
 //   }
 // }
 // checkValue();
-
 
 // Program 28
 // 28. Write a js program to find cube of any number using function.
@@ -526,7 +524,6 @@
 //   return 3.14*radius*radius;
 // }
 
-
 // let radiusVal=parseInt(prompt("Enter the radius of cirlce:"));
 
 // let diameterVal = diameter(radiusVal);
@@ -540,7 +537,383 @@
 // }
 // circleCal();
 
-
 // Program 30
 // 30. Write a js program to find maximum and minimum between two numbers using functions.
 
+// function numMaxMin(){
+
+// let number1=parseInt(prompt("Enter your Number 1:"))
+// let number2=parseInt(prompt("Enter your Number 2:"))
+
+// function numberMax(){
+
+// console.log("First number is Maxium");
+// }
+
+// function numberMin(){
+//   console.log("First number is Minimum");
+// }
+
+// if(number1>number2){
+//   numberMax();
+// }
+
+// else{
+//   numberMin();
+// }
+
+// }
+
+// numMaxMin();
+
+// Program 31
+// 31. Write a js program to check whether a number is even or odd using functions.
+
+// function evenOddCheck(){
+
+// function evenOdd(number){
+// if(number%2==0){
+//   return "Even";
+// }
+// return "Odd";
+// }
+
+// let number = parseInt(prompt("Enter your Number:"));
+
+// let result = evenOdd(number);
+
+// console.log("Result is:",result);
+
+// }
+
+// evenOddCheck();
+
+// Programe 33
+// 33. Write a js program to find maximum between two numbers using conditional operator.
+
+// function maximumTwoNum(){
+// let number1 = prompt("Enter your first number");
+// let number2 =prompt("Enter your second Number");
+
+// if(number1>number2){
+//     alert(`${number1} is greater than ${number2}`);
+// }
+
+// else{
+//     alert(`${number2} is greater than ${number1}`);
+// }
+
+// }
+// maximumTwoNum();
+
+// Program 34
+// 34. Write a js program to find maximum between three numbers using conditional operator.
+
+// Programe 34
+// 34. Write a js program to find maximum between three numbers.
+
+// function maximumThreeNum(){
+// let number1 = prompt("Enter your first number");
+// let number2 =prompt("Enter your second Number");
+// let number3 =prompt("Enter your third Number");
+
+// if(number1>number2 && number1>number3){
+//         alert(`${number1} is greater than ${number2} & ${number3} `);
+// }
+
+// else if(number2>number3 && number2>number1){
+//         alert(`${number2} is greater than ${number3} & ${number1}`);
+// }
+// else{
+//         alert(`${number3} is greater than ${number2} $ ${number1}`);
+
+// }
+// }
+
+// maximumThreeNum();
+
+// Programe 35
+// 35. Write a js program to check whether a number is even or odd.
+
+// function evenOdd(){
+// let number=prompt("Enter number");
+
+// if(number%2==0){
+//     alert(`${number} is even`)
+// }
+// else{
+//     alert(`${number} is odd`)
+// }
+// }
+// evenOdd();
+
+// Programe 36
+// 36. Write a js program to check whether a year is leap year or not.
+
+// function leapYear(){
+// let year=prompt("Enter the year");
+
+// if(year%4==0  && year%100==!0 || year%400==0){
+//     alert(`${year} is a leap year`);
+// }
+// else{
+//     alert(`${year} is not a leap year`);
+// }
+
+// // *** LEAP YEAR IS MULTIPLE OF 4 and not a multiple of 100
+// // *** LEAP YEARI IS MULTIPLE OF 400
+
+// }
+// leapYear();
+
+//  Programe 37
+// 37. Write a js program to check whether a character is alphabet or not.
+// function checkAlphabet(){
+// let char = prompt("Enter the alphabet:");
+//     if(char.match(/[a-zA-Z]/)){
+//         alert(`${char} is a alphabet`)
+//     }
+//     else{
+//         alert(`${char} is not a alphabet`)
+//     }
+
+// }
+
+// Program 38
+// 39. Write a js program print total number of days in a week switch case.
+
+// function dayCheck(){
+// let day = parseInt(prompt("Enter the day:"));
+// switch (day) {
+//   case 1:
+//     console.log("Sunday");
+
+//     break;
+//   case 2:
+//     console.log("Monday");
+
+//     break;
+//   case 3:
+//     console.log("Tuesday");
+
+//     break;
+//   case 4:
+//     console.log("Wednesday");
+
+//     break;
+//   case 5:
+//     console.log("Thursday");
+
+//     break;
+//   case 6:
+//     console.log("Friday");
+
+//     break;
+//   case 7:
+//     console.log("Saturday");
+
+//     break;
+
+//   default:
+//     break;
+// }
+
+// }
+// dayCheck();
+
+// Program 39
+// 39. Write a js program print total number of days in a month using switch case.
+
+
+// function printMonth(){
+// let month = parseInt(prompt("Enter month:"));
+
+// switch (month) {
+//   case 1:
+//     console.log("31 Days");
+//     break;
+
+//   case 2:
+//     console.log("28/29 Days");
+//     break;
+
+//   case 3:
+//     console.log("31 Days");
+//     break;
+
+//   case 4:
+//     console.log("30 Days");
+//     break;
+
+//   case 5:
+//     console.log("31 Days");
+//     break;
+
+//   case 6:
+//     console.log("30 Days");
+//     break;
+
+//   case 7:
+//     console.log("31 Days");
+//     break;
+
+//   case 8:
+//     console.log("31 Days");
+//     break;
+
+//   case 9:
+//     console.log("30 Days");
+//     break;
+
+//   case 10:
+//     console.log("31 Days");
+//     break;
+
+//   case 11:
+//     console.log("30 Days");
+//     break;
+
+//   case 12:
+//     console.log("31 Days");
+//     break;
+
+//   default:
+//     break;
+// }
+// }
+
+
+
+
+// function vowelOrNot(){
+// let alphabet =prompt("Enter alphabet:")
+
+// switch (alphabet) {
+//   case 'a':case 'A':
+//     console.log("Vowel");
+//     break;
+
+//   case 'e':case'E':
+//     console.log("Vowel");
+//     break;
+
+//   case 'i':case 'I':
+//     console.log("Vowel");
+//     break;
+
+//   case 'o':case 'O':
+//     console.log("Vowel");
+//     break;
+
+//   case 'u':case'U':
+//     console.log("Vowel");
+//     break;
+
+
+//   default:
+//     console.log("Not a vowel")
+//     break;
+// }
+// }
+// vowelOrNot();
+
+
+
+//Program 4
+// 41. Write a js program to find maximum between two numbers using switch case.
+
+// function greaterNum(){
+
+// let num1=parseInt(prompt("Enter your Number 1"));
+// let num2=parseInt(prompt("Enter your Number 2"));
+
+// switch (num1>num2) {
+//   case true:
+//       console.log("Greater Number",num1);
+//    break;
+//    case false:
+//        console.log("Greater Number",num2);
+//    break;
+// }
+
+// }
+
+
+
+
+// function evenOdd(){
+
+//   let num1=parseInt(prompt("Enter your Number"));
+  
+//   switch (num1%2==0) {
+//     case true:
+//         console.log("Number is even");
+//      break;
+//      case false:
+//          console.log("Number is odd");
+//      break;
+//   }
+  
+//   }
+
+//   evenOdd();
+
+
+// Program 43
+
+// 43. Write a js program to check whether a number is positive, negative or zero using switch
+// case.
+
+// Program 43
+// 43. Write a js program to check whether a number is positive, negative or zero using switch
+// case.
+
+// function numberCheck(){
+// let number=parseInt(prompt("Enter your Number:"))
+
+// switch (number>0) {
+ 
+//   case true:
+//     console.log("Number is Positive");
+
+    
+//     break;
+
+//   default:
+//     console.log("Number is Zero or Negative")
+//     break;
+// }
+// }
+
+
+// Program 54
+// 54. Write a js program to merge two array to third array.
+
+// function array(){
+// let arr1=[1,2];
+// let arr2=["My array"];
+
+// let arr3 =["Third array"];
+
+// let twoArray= arr1.concat(arr2);
+
+// let threeArray=twoArray.concat(arr3);
+// console.log(threeArray);
+
+
+
+
+
+// }
+
+
+
+// Program 49
+// 49. Write a js program to delete an element from an array at specified position.
+
+
+// let arr1=["Apple","Banana","Orange","Mango","Gauva"];
+
+// let afterRomove=arr1.splice(0,1);
+// console.log("Before Removal:",arr1);
+// console.log("After Removal:",afterRomove);
