@@ -1,4 +1,5 @@
 // Program 1
+// function lowerUpper(){
 // 1. Write a js program to convert lowercase string to uppercase.
 
 // let string1 = "my name is tariq";
@@ -7,6 +8,9 @@
 //    let toUC= string1.toUpperCase();
 //    console.log(toUC);
 // }
+// }
+
+
 
 // Program 2
 // 2. Write a js program to convert uppercase string to lowercase.
@@ -911,9 +915,142 @@
 // Program 49
 // 49. Write a js program to delete an element from an array at specified position.
 
-
+// function removeArray(){
 // let arr1=["Apple","Banana","Orange","Mango","Gauva"];
 
 // let afterRomove=arr1.splice(0,1);
 // console.log("Before Removal:",arr1);
 // console.log("After Removal:",afterRomove);
+// }
+
+
+//Program 57
+// 47. Write a js program to copy all elements from an array to another array.
+// function copiedArray(){
+// let arr1=["Apple","Banana","Orange","Mango","Gauva"];
+// console.log("Origianl Array:",arr1)
+// let copiedArray=arr1.slice();
+
+
+// console.log("New Copied Array from Original Array",copiedArray);
+// }
+
+
+// Program 53
+// 53. Write a js program to delete all duplicate elements from an array.
+    // function getUnique(array){
+    //     var uniqueArray = [];
+        
+    //     // Loop through array values
+    //     for(i=0; i < array.length; i++){
+    //         if(uniqueArray.indexOf(array[i])===) {
+    //             uniqueArray.push(array[i]);
+    //         }
+    //     }
+    //     return uniqueArray;
+    // }
+    
+    // var names = ["Ali","Ahmad","Ali","Waqas","Naveed"];
+    // var uniqueNames = getUnique(names);
+    // console.log(uniqueNames);
+
+
+// Program 52
+// 52. Write a js program to count total number of duplicate elements in an array.
+
+// function count() {
+//     array_elements = ["a", "b", "c", "d", "e", "a", "b", "c", "f", "g", "h", "h", "h", "e", "a"];
+
+//     array_elements.sort();
+
+//     var current = null;
+//     var cnt = 0;
+//     for (var i = 0; i < array_elements.length; i++) {
+//         if (array_elements[i] != current) {
+//             if (cnt > 0) {
+//                console.log(`${current} comes ${cnt} times`)
+//             }
+//             current = array_elements[i];
+//             cnt = 1;
+//         } else {
+//             cnt++;
+//         }
+//     }
+//     if (cnt > 0) {
+//         console.log(`${current} comes ${cnt} times`)
+//     }
+
+// }
+
+// count();
+
+
+
+
+// Program 48
+// 48. Write a js program to insert an element in an array.
+
+// function insertElement(){
+// let arr1= ["Ahmad",true,2];
+
+// let insertElement=arr1.unshift("Tariq here");
+
+// console.log("After inserted an element New is array is:",arr1);
+// }
+
+
+
+// Progra, 46
+// 46. Write a js program to count total number of negative elements in an array.
+
+// function negativeElement(){
+// let arr1=[-1,20,9,-2];
+
+// for(let i=0;i<=arr1.length;i++){
+// if(arr1[i]<0){
+    
+//     console.log("Negative elements are:",arr1[i])
+// }
+
+
+// }
+
+
+// }
+
+
+// 45. Write a js program to create Simple Calculator using switch case.
+// function swtitchCal(){
+// let number1=parseInt(prompt("Enter your number 1:"));
+// let number2=parseInt(prompt("Enter your number 2:"));
+// let operator=prompt("Enter the Operation + , - , * , /");
+
+// switch(operator){
+//     case '+':
+
+//     console.log(`${number1}`+`${number2}`);
+//     break;
+//     case '/':
+
+//     console.log(`${number1}`/`${number2}`);
+//     break;
+//     case '-':
+
+//     console.log(`${number1}`-`${number2}`);
+//     break;
+
+//     case '*':
+
+//     console.log(`${number1}`*`${number2}`);
+//     break;    
+//     default:
+//         console.log("invalid operation");
+//         break;
+
+
+// }
+
+
+
+// }
+
