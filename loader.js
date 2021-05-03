@@ -14,24 +14,24 @@
 
 // Program 2
 // 2. Write a js program to convert uppercase string to lowercase.
-
+// function runThisByCall(){
 // let string2 = "MY FATHER NAME IS SALAMAT ALI";
 
 // for(let i=0;i<=string2.length;i++){
 // let toLC = string2.toLocaleLowerCase();
 // console.log(toLC);
-// }
+// }}
 
 // // Program 3
 // // Write a js program to toggle case of each character of a string
-
+// function runThisByCall(){
 // let string3 = "i LiVe in  FaISALABAD";
 
 // for(let i=0;i<=string3.length;i++){
 //     if(string3[i].match(/[a-z]/)){
 //     let toUC =  string3.toUpperCase();
 //     console.log(toUC);
-//     }
+//     }}
 
 // Program 4
 // 4. Write a js program to find total number of alphabets, digits or special character in a string
@@ -93,7 +93,7 @@
 
 // }
 
-// sumOfNaturalNum();
+
 
 // Program 14
 // // 14. Write a js program to find sum of all even numbers between 1 to n
@@ -149,6 +149,7 @@
 // }
 
 // tablePrint();
+
 
 // Program 17
 // 17. Write a js program to count number of digits in a number
@@ -1054,3 +1055,145 @@
 
 // }
 
+
+
+// MATH BASIC PROGRAMS
+
+// Program 1
+// Question-01
+// Write a function that converts hours into seconds.
+// Examples
+// howManySeconds(2) ➞ 7200
+// howManySeconds(10) ➞ 36000
+// howManySeconds(24) ➞ 86400
+// Notes
+// * 60 seconds in a minute, 60 minutes in an hour
+// * Don't forget to return your answer.
+
+
+
+// function hoursCal() {
+    
+
+
+// function howManySeconds(number) {
+//     let result = number * 60 *60;
+//     return result;
+    
+
+    
+// }
+
+// let num= parseInt(prompt("Enter your number"));
+// console.log(howManySeconds(num));
+
+    
+
+
+// }
+// hoursCal();
+
+
+// Program 2
+
+// Question-02
+// Create a function that takes the age and return the age in days.
+// Examples
+// calcAge(65) ➞ 23725
+// calcAge(0) ➞ 0
+// calcAge(20) ➞ 7300
+// Notes
+// * Use 365 days as the length of a year for this challenge.
+// * Ignore leap years and days between last birthday and now.
+// * Expect only positive integer inputs.
+
+
+// function ageCal() {
+    
+
+
+// function ageInDays(number) {
+//     let result = number * 365;
+//     return result;
+    
+
+    
+// }
+
+// let num= parseInt(prompt("Enter your Age:"));
+// console.log("Age in Days: ",ageInDays(num));
+
+    
+
+
+// }
+// ageCal();
+
+
+
+
+// Program 3
+// Question-03
+// Create a function which takes an array of number arr and returns inverted array.
+// Examples
+// invertArray([1, 2, 3, 4, 5])) ➞ [-1, -2, -3, -4, -5]
+// invertArray([1, -2, 3, -4, 5] ➞ [-1, 2, -3, 4, -5]
+// invertArray([]) ➞ []
+
+// Program 4
+// Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
+// Examples
+// comp("AB", "CD") ➞ true
+// comp("ABC", "DE") ➞ false
+// comp("hello", "edabit") ➞ false
+
+
+// function stringCount() {
+    
+
+// function twoStrings(st1,st2) {
+// let string1= st1.length;
+// console.log("First String Length:",string1);
+// let string2 = st2.length;
+// console.log("Second String Length:",string2);
+// if(string1===string2){
+//     console.log("True")
+// }
+// else{
+//     console.log("False")
+// }
+
+
+    
+// }
+
+// console.log(twoStrings(prompt("Enter your First String:"),prompt("Enter your 2nd String:")));
+
+// }
+// stringCount();
+
+
+
+// Question-05
+// Create a function that takes an array of integers and strings. Convert integers to strings and return the new array.
+// Examples
+// parseArray([1, 2, "a", "b"]) ➞ ["1", "2", "a", "b"]
+// parseArray(["abc", 123, "def", 456]) ➞ ["abc", "123", "def", "456"]
+// parseArray([1, 2, 3, 17, 24, 3, "a", "123b"]) ➞ ["1", "2", "3", "17", "24", "3", "a", "123b"]
+// parseArray([]) ➞ []
+
+// function changeArray(){
+
+// function parseArray(arr) {
+//     console.log("Original Array",arr);
+//     let parsedArray=arr.map(function(element){return element.toString()})
+//     console.log("Parsed Array: ",parsedArray);
+    
+
+// }
+
+// let array =[1,2,'a','abe'];
+// parseArray(array);
+
+// }
+// changeArrayArray();
