@@ -1433,18 +1433,132 @@
 // ax2 + bx + c = 0
 
 
-let a =parseInt( prompt("Enter your value of a: "));
-let b =parseInt( prompt("Enter your value of b: "));
-let c =parseInt( prompt("Enter your value of c: "));
+// let a =parseInt( prompt("Enter your value of a: "));
+// let b =parseInt( prompt("Enter your value of b: "));
+// let c =parseInt( prompt("Enter your value of c: "));
 
 
-let equation = Math.sqrt((b*b) -( 4 * a * c));
+// let equation = Math.sqrt((b*b) -( 4 * a * c));
 
 
 
 
-let root1 =parseInt( - b*(equation)/2*a);
-let root2 =parseInt( + b*(equation)/2*a);
+// let root1 =parseInt( - b*(equation)/2*a);
+// let root2 =parseInt( + b*(equation)/2*a);
 
-console.log("Root1 is: ",root1);
-console.log("Root2 is: ",root2);
+// console.log("Root1 is: ",root1);
+// console.log("Root2 is: ",root2);
+
+// Program 9
+// 9- Write a js program to calculate profit or loss.
+
+
+
+// let price = parseInt( prompt( "Enter your product price you buy:"))
+// let sell =parseInt( prompt("You sell it in rupees?"));
+
+// if(price<sell){
+//     console.log("This is Profit");
+// }
+// else{
+//     console.log("This is loss");
+// }
+
+
+// Program 10
+// 10- Write a js program to search all occurrences of a character in given string.
+
+// let string = "This is string";
+// for(let i=0;i<=string.length;i++){
+//     console.log("Index Number ",i," => ",string.charAt([i]));
+// }
+
+// Program 11
+
+// Write a js program to remove first occurrence of a character from string.
+// let string = "This is string";
+// let afterRemovealFirstChar= string.substring(1);
+// console.log(afterRemovealFirstChar);
+
+// Program 16
+// 16- Write a js program to remove last occurrence of a character from string.
+
+// let string = "This is string";
+// let afterRemovealFirstChar= string.substring(0,string.length-1);
+// console.log(afterRemovealFirstChar);
+
+
+
+// Program 17
+// 17- Write a js program to remove all occurrences of a character from string.
+
+// let string = "This is string";
+// let afterRemovealFirstChar= string.substring(string.length);
+// console.log(afterRemovealFirstChar);
+
+// Program 19
+// 19- Write a js program to replace first occurrence of a character with another in a string.
+
+// let string = "This is string";
+
+// let result = string.charAt(0);
+// let remove = result.replace(result,prompt("Enter the character to be replaced: "))
+// console.log(remove+string.substring(1,string.length))
+
+
+// Program 20
+// 20- Write a js program to replace last occurrence of a character with another in a string.
+
+// let string = "This is string";
+
+// let result = string.charAt(string.length-1);
+// let add = result.replace(result,prompt("Enter the character to be replaced: "))
+// console.log((string.substring(0,string.length)+add));
+
+
+
+// Program 21
+// 21- Write a js program to replace all occurrences of a character with another in a string.
+
+
+// let string = "This is string";
+
+// let replace = string.replace(string,prompt("Enter replaced string:"));
+// console.log("Original String:",string);
+// console.log("Replaced String: ",replace)
+
+
+
+// Program 22
+// 22- Write a js program to find first occurrence of a word in a given string.
+
+// let string = prompt("Enter your string to console the first word");
+// let arr1=[];
+//     for(let i=0;i<=string.length;i++){
+//         arr1.push(string[i]);
+//         if(string[i]===" "){
+//             break;
+//         }
+//     }
+//     let arr2 = arr1.slice(0,arr1.length-1);
+//     let toStrings= arr2.toString();
+//     let result = toStrings.replace(",","")
+// console.log((result));
+
+
+
+
+let string = prompt("Enter your string to console the first word");
+
+let arr1=[];
+    for(let i =string.length;i>=0;i--){
+        arr1.push(string[i]);
+        if(string[i]===" "){
+            break;
+        }
+    }
+    let arr2 = arr1.slice(0,arr1.length-1);
+    let toStrings= arr2.toString();
+    let result = toStrings.replace(",","")
+      let result1 = arr1.reverse();
+console.log((result1));
