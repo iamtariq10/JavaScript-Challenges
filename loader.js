@@ -1197,3 +1197,254 @@
 
 // }
 // changeArrayArray();
+
+
+// PROBLEM BASE PROGRAMS
+
+// Question-01
+// Write a function that takes a credit card number and only displays the last four characters. The rest of the card number must be replaced by ************.
+// Examples
+// cardHide("1234123456785678") ➞ "************5678"
+// cardHide("8754456321113213") ➞ "************3213"
+// cardHide("35123413355523") ➞ "**********5523"
+
+
+
+
+
+
+
+
+
+// function cardHide(card) {
+//     let hideNum = [];
+//       for(let i = 0; i < card.length; i++){
+//       if(i < card.length-4){
+//         hideNum.push("*");
+//       }else{
+//         hideNum.push(card[i]);
+//       }
+//     }
+//     return hideNum.join("");
+//   }
+
+//   console.log(cardHide("1234123456785678"));
+
+
+
+// Program 2
+
+
+// Question-02
+// Create a function to return the amount of potatoes there are in a string.
+// Examples
+// potatoes("potato") ➞ 1
+// potatoes("potatopotato") ➞ 2
+// potatoes("potatoapple") ➞ 1
+
+
+// function potato(potstring) {
+// if(potstring==="potato"){
+//     return 1;
+// }
+// else if(potstring==="potatopotato"){
+//     return 2;
+
+
+    
+// }
+// else if(potstring==="potatopotatopotato"){
+//     return 3;
+
+
+// }
+
+// }
+// console.log(potato("potatopotato"));
+
+
+// Program 3
+
+
+// Question-03
+// Create a function that takes a string and returns a string in which each character is repeated once.
+// Examples
+// doubleChar("String") ➞ "SSttrriinngg"
+// doubleChar("Hello World!") ➞ "HHeelllloo  WWoorrlldd!!"
+// doubleChar("1234!_ ") ➞ "11223344!!__  "
+
+
+// function repeatString(string) {
+
+//     for(let i=0;i<=string.length;i++){
+//         console.log((string[i]+string[i]));
+        
+
+        
+        
+//     }
+
+
+
+// }
+
+// console.log(repeatString("Hi"))
+
+
+// function unitBill(units) {
+//     if(units<=50){
+//         let bill = units*0.5;
+//         console.log("Total bill before Tax: ",bill)
+//         let tax = (bill*20)/100;
+//         console.log("Total bill after Tax 20%: ",bill+tax);
+//     }
+//     else if(units<=150){
+//         let bill = (50*0.5) + (units-50)*0.75;
+//         console.log("Total bill before Tax: ",bill)
+//         let tax = (bill*20)/100;
+//         console.log("Total bill is: ",bill+tax);        
+//     }
+//     else if(units<=250){
+//        let bill =(50*0.5)+(100*0.75)+((units-200)*1.20);
+//        console.log("Total bill before Tax: ",bill)
+//        let tax = (bill*20)/100;
+//         console.log("Total bill after Tax 20%: ",bill+tax);
+
+//     }
+//     else if(units>250){
+//         let bill =units*1.50;
+//         console.log("Total bill before Tax: ",bill)
+//         let tax = (bill*20)/100;
+//         console.log("Total bill after Tax 20%: ",bill+tax);
+//     }
+// }
+
+
+// let yourUnits = parseInt(prompt("Enter your units: "));
+// console.log(unitBill(yourUnits));
+
+
+
+
+
+
+// function twoStrings(str1,str2) {
+//     let arr=[];
+// for(let i=0;i<=str2.length;i++){
+//     if(str1===str2[i]){
+//         arr.push(str2[i]);
+//     }
+    
+    
+// }
+// console.log("Total Occurances:" ,arr.length);
+
+// }
+
+
+// console.log(twoStrings("a",prompt("Enter your Second String")));
+
+
+// function multiples(number) {
+    
+//     let sum = 0;
+//     for (let i = 0; i <= number; i++) {
+  
+//     if (i % 3 === 0 && i % 5 === 0) {
+//       sum += i;
+//         }
+        
+//       }
+//       console.log(sum)
+      
+      
+//     }
+// multiples(1000);
+
+
+
+
+// let string = "Hellow world !";
+
+// let split = string.split(" ");
+// console.log("Before join and after split:",split)
+// let join = split.join("")
+
+// console.log(join);
+
+
+
+
+
+// Problem Base Programs
+// 1- Write a js program to check whether a character is uppercase or lowercase alphabet.
+
+
+
+// const alphabet = prompt("Write a character: ");
+
+// if(alphabet.match(/[A-Z]/)){
+//     console.log("Uppercase");
+
+// }
+// else{
+//     console.log("LowerCase")
+// }
+
+// Program 5
+
+//  Write a js program to input angles of a triangle and check whether triangle is valid or not.
+
+
+// let angle1 =parseInt( prompt("Enter your First angle: "));
+// let angle2 =parseInt( prompt("Enter your Second angle: "));
+// let angle3 =parseInt( prompt("Enter your Third angle: "));
+
+// let totalAngles = angle1 + angle2 + angle3;
+// if(totalAngles===180){
+//     console.log("It is valid Triangle");
+
+// }
+// else{
+//     console.log("Not a triangle");
+// }
+
+
+// Program 7
+// 7- Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle.
+
+// let angle1 =parseInt( prompt("Enter your First angle: "));
+// let angle2 =parseInt( prompt("Enter your Second angle: "));
+// let angle3 =parseInt( prompt("Enter your Third angle: "));
+
+
+// if(angle1 ===angle2 && angle1===angle3 && angle2===angle3){
+//     console.log("It is Equilateral triangle");
+// }
+// else{
+//     console.log("it is isosceles or scalene triangle")
+// }
+
+
+
+
+// Program 8
+// 8- Write a js program to find all roots of a quadratic equation.
+// ax2 + bx + c = 0
+
+
+let a =parseInt( prompt("Enter your value of a: "));
+let b =parseInt( prompt("Enter your value of b: "));
+let c =parseInt( prompt("Enter your value of c: "));
+
+
+let equation = Math.sqrt((b*b) -( 4 * a * c));
+
+
+
+
+let root1 =parseInt( - b*(equation)/2*a);
+let root2 =parseInt( + b*(equation)/2*a);
+
+console.log("Root1 is: ",root1);
+console.log("Root2 is: ",root2);
