@@ -1548,17 +1548,86 @@
 
 
 
-let string = prompt("Enter your string to console the first word");
+// let string = prompt("Enter your string to console the first word");
 
-let arr1=[];
-    for(let i =string.length;i>=0;i--){
-        arr1.push(string[i]);
-        if(string[i]===" "){
-            break;
-        }
+// let arr1=[];
+//     for(let i =string.length;i>=0;i--){
+//         arr1.push(string[i]);
+//         if(string[i]===" "){
+//             break;
+//         }
+//     }
+//     let arr2 = arr1.slice(0,arr1.length-1);
+//     let toStrings= arr2.toString();
+//     let result = toStrings.replace(",","")
+//       let result1 = arr1.reverse();
+// console.log((result1));
+
+
+// // Program 52
+
+// 52- Write a js program to sort even and odd elements of array separately.
+
+// let array = [10,2,4,6,1,3,2];
+// let oddNumber=[];
+// let evenNumbers = [];
+// console.log(array.sort(function(a,b){return (a-b)}));
+
+// for(let i =0;i<=array.length;i++){
+//     if(array[i] % 2 ===0 ){
+//         evenNumbers.push(array[i]);
+
+//     }
+//     else if(array[i] % 2===1){
+//         oddNumber.push(array[i])
+//     }
+// }
+
+
+// console.log("Odd Numbers: " ,JSON.stringify( oddNumber));
+// console.log("Even Numbers: ",JSON.stringify( evenNumbers));
+
+
+// 40- Write a js program to search an element in an array.
+
+// let array = [1,2,3,4,5,"Mohammad",'T'];
+// const number =parseInt( prompt("Enter your number"));
+
+// for(let i =0;i<=array.length;i++){
+     
+// if(number === array[i]){
+//     console.log("Number Founded");
+// }
+// else{
+//     console.log("Number not found");
+//     break;
+// }
+
+// }
+
+
+// 45- Write a js program to find sum of all odd numbers between 1 to n.
+
+
+
+
+
+
+function isOdd(n) {
+    return Boolean(n % 2);
+  }
+  
+  function findSum(no) {
+    let sum = 0;
+  
+    for (var i = 0; i < no; i++) {
+      if (isOdd(i)) {
+        sum += i;
+      }
     }
-    let arr2 = arr1.slice(0,arr1.length-1);
-    let toStrings= arr2.toString();
-    let result = toStrings.replace(",","")
-      let result1 = arr1.reverse();
-console.log((result1));
+    return sum;
+  }
+  
+  console.log(findSum(100));
+
+
