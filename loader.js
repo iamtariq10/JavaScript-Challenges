@@ -1613,21 +1613,101 @@
 
 
 
-function isOdd(n) {
-    return Boolean(n % 2);
-  }
+// function isOdd(n) {
+//     return Boolean(n % 2);
+//   }
   
-  function findSum(no) {
-    let sum = 0;
+//   function findSum(no) {
+//     let sum = 0;
   
-    for (var i = 0; i < no; i++) {
-      if (isOdd(i)) {
-        sum += i;
-      }
-    }
-    return sum;
-  }
+//     for (var i = 0; i < no; i++) {
+//       if (isOdd(i)) {
+//         sum += i;
+//       }
+//     }
+//     return sum;
+//   }
   
-  console.log(findSum(100));
+//   console.log(findSum(100));
 
 
+
+// Program 5
+// 5. Write a js program to print all odd number between 1 to 100.
+
+
+// for(let i=1;i<=100;i++){
+//   if(i%2==1){
+//     console.log("Odd Numbers from 1 to 100 :",i);
+//   }
+// }
+
+// Program 6
+// 4. Write a js program to print all even numbers between 1 to 100. - using forloop
+
+
+// for(let i=1;i<=100;i++){
+//   if(i%2==0){
+//     console.log("Even Numbers from 1 to 100 :",i);
+//   }
+// }
+
+// Program 7
+// 3. Write a js program to print all alphabets from a to z. - using for loop
+
+// let alphabet ="abcdefghijklmnopqrstuvwxyz";
+
+
+// for(let i=0;i<=alphabet.length;i++){
+//   console.log(alphabet.charAt(i));
+// }
+
+// Program 7
+// 2. Write a js program to print all natural numbers in reverse (from n to 1). - using for loop
+
+// let value =parseInt(prompt("Enter your Number: "))
+// for(let i=value;i>=1;i--){
+//   console.log(i)
+// }
+
+
+// 1. Write a js program to print all natural numbers from 1 to n. - using for loop
+
+
+// let value =parseInt(prompt("Enter your Number: "))
+// for(let i=1;i<=value;i++){
+//   console.log(i)
+// }
+
+
+
+// 3-Write a js program to floor the number without using the math.floor method!
+
+
+// 10. Write a js program to delete an element from an array at specified position.
+
+
+// let array=[1,2,3,4,5,6];
+// let remove=array.splice(2,1);
+// console.log(array);
+
+
+
+
+// 9. Write a js program to insert an element in an array.
+
+// let array=[1,2,3,4,5,6];
+// let remove=array.splice(2,1,"a");
+// console.log(array);
+
+
+// 8. Write a js program to copy all elements from an array to another array.
+
+
+// let array1=[1,2,3,4,5,6];
+// let array2=[7,8,9,10];
+
+
+// array1.push(...array2);
+
+// console.log(array1)
